@@ -7,7 +7,10 @@
 
 <script>
 export default {
-    name: 'exchanger'
+    name: 'exchanger',
+    mounted() {
+        this.$store.dispatch('Currencies/GET_API_DATA')
+    }
 }
 </script>
 
